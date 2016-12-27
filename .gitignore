@@ -1,8 +1,6 @@
-<<<<<<< HEAD
 *.pyc
 db.sqlite3
-=======
->>>>>>> ed653ab009f269f8e087bca20a90f4a0eaca3256
+
 # Logs
 logs
 *.log
@@ -42,6 +40,7 @@ jspm_packages
 .node_repl_history
 
 
+
 .DS_Store
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -67,3 +66,5 @@ dump.rdb
 logs/*.log
 *.sql
 Procfile
+
+
