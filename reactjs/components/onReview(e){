@@ -1,0 +1,25 @@
+onReview(e){
+        e.preventDefault();
+        var reviewtxt =  ReactDOM.findDOMNode(this.refs.reviewtext).value;
+        var csrftoken = Cookies.get('csrftoken');
+        var data = {
+                    "csrfmiddlewaretoken": csrftoken,
+                    "comment":reviewtxt,
+                };
+        var handler = $.ajax({
+              data : data,
+              url: 'products/view/'+this.props.params.id+'/',
+              type: "POST",
+              dataType: "json",
+              success: function ( result ) {
+                this.setState({
+                    item:result.data.item,
+                    comments:result.data.comments,
+                });
+                ReactDOM.findDOMNode(this.refs.reviewtext).value = "";
+              }.bind(this)
+        });
+          handler.fail(function(error) {
+          console.log(error);
+        });
+    },

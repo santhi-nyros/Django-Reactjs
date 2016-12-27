@@ -1,0 +1,139 @@
+.Employee{
+    cursor: pointer;
+    width: 250px;
+    padding: 20px;
+    float: left;
+    margin: 20px;
+    border: 2px solid rgba(237, 233, 233, 0.1);
+    box-shadow: 5px 5px #cbc3c3;
+    background-color: #ff4d4d;
+    opacity: 0.5;
+    color: white;
+}
+
+.heading{
+    color:rgb(245, 20, 123);
+}
+.description{
+    color:rgb(130, 170, 206);
+}
+.Product{
+    cursor: pointer;
+    width: 250px;
+    padding: 20px;
+    float: left;
+    margin: 20px;
+    border: 2px solid rgba(237, 233, 233, 0.1);
+    box-shadow: 5px 5px #b6b3af;
+    background-color: rgba(251, 141, 168, 0.61);
+}
+
+.Employee:hover{
+  opacity: 1;
+}
+.add_emp{
+    float: right;
+}
+
+.rating{
+    margin-left: 20px;
+}
+.button{
+    margin: 15px;
+}
+.addEmp{
+    width: 40%;
+    padding: 38px;
+    margin-top: 50px;
+    background-color: skyblue;
+    border-radius: 5px;
+    box-shadow: 10px 10px rgb(143, 175, 189);
+}
+.dv-star-rating{
+    font-size: 280%;
+}
+.home{
+  margin-top:100px;
+}
+.reviews{
+    padding: 10px;
+    color: rgb(102, 96, 104);
+    font-weight: bold;
+    background-color: #ffcccc;
+    width: 450px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.home_img{
+    position: absolute;
+    margin-left: 53px;
+    margin-top: 155px;
+}
+
+.ratingForm{
+    margin-top:50px;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+
+.product_details{
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.Tab-div{
+  margin-top: 20px;
+}
+textarea{
+    width: 431px;
+    height: 53px;
+}
+
+body {
+  /*background-image: url("../media/jpg.jpg");*/
+  background-color: #ffe6e6;
+  padding: 20px;
+  margin: 0;
+}
+h1{
+  color:black;
+}
+h1, h2, p, ul, li {
+  font-family: Helvetica, Arial, sans-serif;
+}
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  cursor: pointer;
+}
+ul.header {
+  background-color: #e35174;
+  padding: 0;
+}
+ul.header li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
+.content {
+  background-color: #FFF;
+  padding: 20px;
+}
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+.content li {
+  margin-bottom: 10px;
+}
+
+
+ul.header li a:active,ul.header li a:focus {
+  background-color: white;
+  color: red;
+}

@@ -1,0 +1,24 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}djreact/static/css/mystyles.css">
+
+    <script src="https://npmcdn.com/jquery@3.1.0/dist/jquery.min.js"></script>
+    <!-- <script src="https://npmcdn.com/remarkable@1.6.2/dist/remarkable.min.js"></script> -->
+
+    <script>
+    var csrf = "{% csrf_token %}";
+    var STATIC_URL = "{{STATIC_URL}}";
+  </script>
+    <script src="{{STATIC_URL}}djreact/static/bundles/local/cookie.js"></script>
+    <title>Django+Reactjs app</title>
+  </head>
+  <body>
+    {% block main %}{% endblock %}
+
+  </body>
+</html>
